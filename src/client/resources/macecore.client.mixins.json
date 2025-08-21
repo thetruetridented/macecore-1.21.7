@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "thetruetrident.macecore.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"forceAttack"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

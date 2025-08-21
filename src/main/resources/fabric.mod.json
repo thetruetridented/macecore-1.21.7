@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "mace-utils",
+	"version": "${version}",
+	"name": "MaceCore",
+	"description": "A mace utility modification and anti-cheat developed by thetruetrident, allowing for undetectable performance enhancements.",
+	"authors": [
+		"thetruetrident"
+	],
+	"contact": {
+		"homepage": "discord.gg/5Ss9gvSPWP",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/macecore/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"thetruetrident.macecore.MacecoreServer"
+		],
+		"client": [
+			"thetruetrident.macecore.MacecoreClient",
+			"thetruetrident.macecore.PearlCatcher",
+			"thetruetrident.macecore.aimAssist"
+		]
+	},
+	"mixins": [
+		"macecore.mixins.json",
+		{
+			"config": "macecore.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
